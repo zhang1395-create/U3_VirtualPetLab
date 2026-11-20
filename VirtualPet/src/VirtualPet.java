@@ -3,8 +3,8 @@
 public class VirtualPet {
     private String name;
     private int weight;
-    private int energy = 5;
-    private int happy = 5;
+    private int energy = 0;
+    private int happy = 0;
     private int years = 0;
     private int months = 0;
     public VirtualPet(String n){
@@ -18,7 +18,7 @@ public class VirtualPet {
     }
     public String toString(){
         String out = name + "'s Information:\nEnergy: " + energy + "\nHappiness: " + happy + "\nWeight: " + weight + "g\nAge: ";
-        out += months%12 + " and " + years + " years";
+        out += months%12 + " months and " + years + " years";
         return out;
     }
     public void feed(){
